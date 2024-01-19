@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./styles/adapt768.css">
     <link rel="stylesheet" href="./styles/adapt360.css">
 
-    <script src="./scripts/script.js"></script>
 
     <title>Site</title>
 </head>
@@ -33,7 +32,11 @@
                     <div class="mob-menu"></div>
                 </header>
                 <div class="first-block-content">
-                    <img class="first-block-img" src="./source/man-img.jpg" alt="Ваше изображение">
+                    <picture>
+                        <source srcset="./source/man-img.jpg" media="(max-width: 600px)"/>
+                        <source srcset="./source/man768.png" media="(max-width: 768px)"/>
+                        <img class="first-block-img" src="./source/man-img.jpg" alt="Ваше изображение"/>
+                    </picture>
                     <div class="first-block-purple-bg"></div>
                     <div class="first-block-text">
                         <p class="top-text">I’m Robin Williams.<br>A Product Designer<p class="top-text-extra">based in Italy.</p></p>
@@ -223,8 +226,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-block holder">
+                <picture class="image-block holder">
+                    <source srcset="./source/hand-img.png" media="(max-width: 600px)"/>
                     <img src="./source/7block-img.png" alt="" class="seventh-block-img">
+                </picture>
+                    
                 </div>
             </div>
 
