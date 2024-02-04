@@ -1,0 +1,220 @@
+
+@media (max-width: 1100px) {
+    .block-padding {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .first-block-text {
+        margin: 87px 0 0px auto;
+    }
+    .top-text, .top-text-extra {
+        font-size: 56px;
+    }
+    .bottom-text {
+        margin-top: 32px;
+    }
+    .second-block {
+        padding-top: 80px;
+    }
+    .third-block .block-padding {
+        padding: 80px 40px;
+    }
+    .fifth-block {
+        flex-direction: column;
+    }
+    .seventh-block .block-padding {
+        padding: 80px 40px;
+    }
+    
+}
+@media (max-width: 1000px) {
+    .first-block-purple-bg {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .first-block{
+        min-height: 700px;
+    }
+    .second-block-content {
+        margin-bottom: 80px;
+    }
+    .third-block .block-padding {
+        padding: 80px 40px;
+    }
+    .third-block .white-text {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .fouth-block {
+        flex-direction: column;
+    }
+    .fouth-block .first-content-holder {
+        width: 100%;
+        padding-right: 40px;
+    }
+    .fouth-block .first-content-holder .gray-text {
+        max-width: 100%;
+    }
+    .fouth-block .second-content-holder {
+        width: 100%;
+        margin-top: 48px;
+    }
+    .fifth-block {
+        padding: 0;
+    }
+    .sixth-block {
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    .sixth-block-column {
+        width: 100%
+    }
+    .sixth-block-column .upper-text-block .white-text {
+        max-width: 100%;
+    }
+    .sixth-block-content {
+        margin-bottom: 48px;
+    }
+    .sixth-block-content-text .gray-text {
+        max-width: 620px;
+    }
+    .sixth-block .sec-column {
+        margin: 0px;
+    }
+    .sixth-block .button-holder {
+        display: none;
+    }
+    .seventh-block .block-padding {
+        padding: 80px 40px;
+    }
+    .seventh-block .white-text {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+
+    
+}
+
+
+@media (max-width: 600px) {
+    .block-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .mob-menu {
+        height: 24px;
+        width: 24px;
+        display: flex;
+        align-self: center;
+    }
+    .first-block-img {
+        position: static;
+    }
+    .first-block-content {
+        padding: 0px;
+        flex-direction: column;
+    }
+    .first-block-text {
+        width: auto;
+        margin: 48px 20px 0px 20px;
+    }
+    .top-text, .top-text-extra {
+        font-size:48px
+    }
+    .second-block {
+        padding-top: 120px;
+    }
+    .second-block-content {
+        flex-direction: column;
+    }
+    .second-block-coulumn {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .second-bottom-text {
+        font-size: 32px;
+        line-height: 38.5px;
+    }
+    .second-block-content {
+        margin-bottom: 0px;
+    }
+
+    .third-block{
+        flex-direction: column;
+    }
+    .third-block .block-padding {
+        padding: 48px 20px;
+    }
+    .third-block .holder {
+        width: 100%;
+        min-height: 360px;
+    }
+    .fouth-block .first-content-holder {
+        padding-right: 20px;
+        flex-direction: column;
+    }
+    .first-content-holder .white-text {
+        font-size: 32px;
+    }
+    .fouth-block .first-content-holder .gray-text{
+        margin-top: 0px;
+    }
+    .fouth-block .second-content-holder .big-content-block {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .big-content-block .content-block {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 48px;
+    
+    }
+    .fouth-block .first-content-holder .gray-text {
+        max-width: 100%;
+    }
+    .fouth-block .second-content-holder {
+        margin-top: 48px;
+        flex-direction: column;
+
+    }
+    .fifth-block {
+        padding: 0;
+    }
+    .sixth-block {
+        padding-top: 64px;
+    }
+    .sixth-block-column .upper-text-block .white-text {
+        font-size: 32px;
+        line-height: normal;
+    }
+    .seventh-block{
+        flex-direction: column;
+    }
+    .seventh-block .block-padding {
+        padding: 48px 20px;
+    }
+    .seventh-block .holder {
+        width: 100%;
+        min-height: 360px;
+    }
+    
+    
+}
+@media (max-width: 360px) {
+    .top-text, .top-text-extra {
+        font-size: 32px;
+    }
+    .bottom-text {
+        margin-top: 16px;
+    }
+    .second-block {
+        padding-top: 80px;
+    }
+}
