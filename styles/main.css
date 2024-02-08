@@ -10,7 +10,7 @@
     position: relative;
     height: auto;
     height: 11902px;
-    z-index: -2;
+    z-index: 0;
 }
 
 .first-block {
@@ -236,24 +236,37 @@ header {
 }
 
 .fifth-block {
-    display: flex;
-    overflow-x: hidden;
+    display: grid;
     width: 100%;
     position: relative;
-}
-.fifth-block-container {
-    display: flex;
-    width: 100%;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;;
 }
 .fifth-block-element {
-    width: 50%;
+    width: auto;
     min-height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #181823;
 
+}
+.fifth-block .first{
+    grid-column: 1;
+}
+.fifth-block .second{
+    grid-column: 2;
+}
+.fifth-block .third{
+    grid-column: 3;
+}
+.fifth-block .fouth{
+    grid-column: 4;
+}
+.fifth-block .fifth{
+    grid-column: 5;
+}
+.fifth-block .sixth{
+    grid-column: 6;
 }
 
 

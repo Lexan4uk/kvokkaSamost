@@ -20,7 +20,31 @@
         padding: 80px 40px;
     }
     .fifth-block {
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+    .fifth-block .first{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .fifth-block .second{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .fifth-block .third{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .fifth-block .fouth{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .fifth-block .fifth{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .fifth-block .sixth{
+        grid-column: 2;
+        grid-row: 3;
     }
     .seventh-block .block-padding {
         padding: 80px 40px;
