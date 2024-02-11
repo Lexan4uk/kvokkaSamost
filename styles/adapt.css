@@ -22,34 +22,42 @@
     .fifth-block {
         grid-template-columns: 1fr 1fr;
     }
-    .fifth-block .first{
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .fifth-block .second{
-        grid-column: 2;
-        grid-row: 1;
-    }
-    .fifth-block .third{
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .fifth-block .fouth{
-        grid-column: 2;
-        grid-row: 2;
-    }
-    .fifth-block .fifth{
-        grid-column: 1;
-        grid-row: 3;
-    }
-    .fifth-block .sixth{
-        grid-column: 2;
-        grid-row: 3;
-    }
+    
     .seventh-block .block-padding {
         padding: 80px 40px;
     }
     
+    .eighth-block .block-padding {
+        padding: 40px 80px;
+    }
+
+    .nineth-block {
+        padding-top: 80px;
+    }
+    .nineth-block .content-item {
+        margin-bottom: 64px;
+    }
+    .nineth-block .content-text-block {
+        padding: 32px;
+    }
+
+    .tenth-block {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .tenth-block-pictures {
+        grid-template-columns: 1fr 1fr;
+    }
+    .eleventh-block .block-padding {
+        padding: 80px 39px;
+    }
+
+    footer {
+        grid-template-columns: 50% 50%;
+    }
+    footer .contacts-holder {
+        grid-row: 1;
+    }
 }
 @media (max-width: 1000px) {
     .first-block-purple-bg {
@@ -71,17 +79,17 @@
         line-height: normal;
     }
 
-    .fouth-block {
+    .fourth-block {
         flex-direction: column;
     }
-    .fouth-block .first-content-holder {
+    .fourth-block .first-content-holder {
         width: 100%;
         padding-right: 40px;
     }
-    .fouth-block .first-content-holder .gray-text {
+    .fourth-block .first-content-holder .gray-text {
         max-width: 100%;
     }
-    .fouth-block .second-content-holder {
+    .fourth-block .second-content-holder {
         width: 100%;
         margin-top: 48px;
     }
@@ -179,17 +187,17 @@
         width: 100%;
         min-height: 360px;
     }
-    .fouth-block .first-content-holder {
+    .fourth-block .first-content-holder {
         padding-right: 20px;
         flex-direction: column;
     }
     .first-content-holder .white-text {
         font-size: 32px;
     }
-    .fouth-block .first-content-holder .gray-text{
+    .fourth-block .first-content-holder .gray-text{
         margin-top: 0px;
     }
-    .fouth-block .second-content-holder .big-content-block {
+    .fourth-block .second-content-holder .big-content-block {
         flex-direction: column;
         margin-bottom: 0px;
     }
@@ -227,6 +235,90 @@
     .seventh-block .holder {
         width: 100%;
         min-height: 360px;
+    }
+    .eighth-block .block-padding {
+        padding: 64px 20px;
+    }
+    .eighth-block .block-padding .image-block-holder {
+        margin-top: 64px;
+    }
+    
+    .nineth-block {
+        grid-template-columns: 1fr;
+    }
+    .nineth-block .text-block .gray-text {
+        margin-bottom: 64px;
+    }
+    .nineth-block .content-block {
+        grid-column: 1;
+    }
+    
+    .tenth-block {
+        padding-top: 48px;
+        padding-bottom: 48x;
+    }
+    .tenth-block .text-block .white-text {
+        font-size: 32px;
+        line-height: normal;
+    }
+    .tenth-block-countries {
+        display: grid;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tenth-block-pictures {
+        grid-template-columns: 1fr;
+    }
+
+    .eleventh-block .block-padding {
+        padding: 48px 20px;
+        grid-template-columns: 1fr;
+    }
+    .eleventh-block .block-padding .text-holder {
+        margin-bottom: 48px;
+    }
+    .eleventh-block .block-padding .text-holder .white-text {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    footer .contacts-holder {
+        grid-row: 2;
+        grid-column: 1;
+        grid-template-columns: 1fr;
+    }
+    footer .contacts-holder a {
+        line-height: 0.5;
+    }
+    footer .contacts-holder .first {
+        grid-row: 1;
+    }
+    footer .contacts-holder .second {
+        grid-row: 2;
+    }
+    footer .contacts-holder .third {
+        grid-row: 3;
+    }
+    footer .contacts-holder .fourth {
+        grid-row: 4;
+    }
+    footer .contacts-holder .fifth {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    footer .contacts-holder .sixth {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    footer .contacts-holder .seventh {
+        grid-column: 1;
+        grid-row: 7;
     }
     
     

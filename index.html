@@ -10,11 +10,7 @@
 
     <link rel="stylesheet" href="./styles/reset-styles.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/adapt1440.css">
-    <link rel="stylesheet" href="./styles/adapt768.css">
-    <link rel="stylesheet" href="./styles/adapt360.css">
-
-    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/adapt.css">
 
     <title>Site</title>
 </head>
@@ -23,7 +19,7 @@
         <div class="main-holder">
             <div class="first-block">
                 <header class="block-padding">
-                    <img class="header-img" src="./source/robin.svg" />
+                    <img class="header-img" src="./source/robin.svg" width="130px" height="40px"/>
                     <div class="nav-menu">
                         <div class="nav-div">Experience</div>
                         <div class="nav-div">Work</div>
@@ -33,7 +29,11 @@
                     <div class="mob-menu"></div>
                 </header>
                 <div class="first-block-content">
-                    <img class="first-block-img" src="./source/man-img.jpg" alt="Ваше изображение" width="750px" height="650px">
+                    <picture>
+                        <source srcset="./source/1block-img.jpg" media="(max-width: 600px)"/>
+                        <source srcset="./source/1block-img768.png" media="(max-width: 768px)"/>
+                        <img class="first-block-img" src="./source/1block-img.jpg" alt="Ваше изображение"/>
+                    </picture>
                     <div class="first-block-purple-bg"></div>
                     <div class="first-block-text">
                         <p class="top-text">I’m Robin Williams.<br>A Product Designer<p class="top-text-extra">based in Italy.</p></p>
@@ -81,7 +81,7 @@
                             authenticity, creativity, & hospitality.
                         </div>
                         <div class="third-bottom-text">
-                            More about me
+                            <a href="#">More about me</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,8 @@
                     <img class="third-block-img" src="./source/hand-img.png" alt="" width="720px" height="600px">
                 </div>
             </div>
-            <div class="fouth-block">
+            
+            <div class="fourth-block">
                 <div class="first-content-holder block-padding">
                     <p class="white-text">Skillset</p>
                     <p class="gray-text">With skills in over 4 different fields of design, 
@@ -181,9 +182,9 @@
                         </div>
                     </div>
                     <div class="button-holder">
-                        <div class="six-block-button">
+                        <button class="six-block-button">
                             <p class="white-text">VIEW ALL PROJECTS</p>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -201,18 +202,152 @@
                             I would love to cherish with the world
                         </div>
                         <div class="seventh-bottom-text">
-                            Follow me on IG
+                            <a href="#">Follow me on IG</a>
                         </div>
                     </div>
                 </div>
-                <div class="image-block holder">
-                    <img class="seventh-block-img" src="./source/7block-img.png" alt="" width="720px" height="600px">
+                <picture class="image-block holder">
+                    <source srcset="./source/hand-img.png" media="(max-width: 600px)"/>
+                    <img src="./source/7block-img.png" alt="" class="seventh-block-img">
+                </picture>
+            </div>
+
+            <div class="eighth-block">
+                <div class="block-padding">
+                    <div class="content-block">
+                        <p class="white-text">Dribbble</p>
+                        <p class="gray-text">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
+                        <a href="#" class="white">Follow me on Dribbble</a>
+                    </div>
+                    <div class="image-block-holder">
+                        <div class="top-image">
+                            <img src="./source/8block-points.png" alt="" class="eigth-block-image" width="48px" height="12px">
+                        </div>
+                        <picture>
+                            <source srcset="./source/8block-img3.png" media="(max-width: 600px)"/>
+                            <source srcset="./source/8block-img2.png" media="(max-width: 768px)" />
+                            <img class="eigth-block-image" src="./source/8block-img1.png" alt="" width="1076px" height="640px">
+                        </picture>
+                        
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-block">
-                
+            <div class="nineth-block block-padding">
+                <div class="text-block">
+                    <p class="white-text">This is what people say about me</p>
+                    <p class="gray-text"><br>Here are a few lines from people who I have worked with over the past 
+                        8+ years in my design career.</p>
+                    <a href="#" class="gray-text white">See all testimonials</a>
+                </div>
+                <div class="content-block">
+                    <div class="content-item">
+                        <img class="nineth-block-image" src="./source/9block-first-img.png" alt="" width="636px" height="360px" >
+                        <div class="content-text-block">
+                            <p class="white-text">‘’Robin is one of the best designers I have worked with 
+                                in my entire life. He is a designer who is very capable of taking up 
+                                complex projects and delivers impeccable design.’’</p>
+                            <p class="gray-text big">Richard Owens</p>
+                            <div class="gray-text">CEO, Company 1</div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <img class="nineth-block-image" src="./source/9block-sec-img.png" alt="" width="636px" height="360px" >
+                        <div class="content-text-block">
+                            <p class="white-text">‘’I think Robin has an incredible gift. 
+                                It has been an absolute pleasure to work with a designer of this caliber.’’</p>
+                            <p class="gray-text big">Emily Parker</p>
+                            <div class="gray-text">CEO, Company 2</div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <img class="nineth-block-image" src="./source/9block-third-img.png" alt="" width="636px" height="360px" >
+                        <div class="content-text-block">
+                            <p class="white-text">‘’All I can say that, Robin is a phenomenal designer.
+                                 The wavelength at which he thinks is astoundaing. 
+                                 I love the focus, passion and attention to detial in the design.’’</p>
+                            <p class="gray-text big">Vincent  Rudd</p>
+                            <div class="gray-text">CEO, Company 1</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="tenth-block block-padding">
+                <div class="text-block">
+                    <p class="white-text">Photography</p>
+                    <p class="gray-text"><br>Here is a collection of my best travel pictures that I took while travelling places all around the world. </p>
+                </div>
+                <div class="tenth-block-countries">
+                    <button class="tenth-block-button">
+                        <p class="white-text">ITALY</p>
+                    </button>
+                    <button class="tenth-block-button">
+                        <p class="white-text">AUSTRALIA</p>
+                    </button>
+                    <button class="tenth-block-button">
+                        <p class="white-text">INDIA</p>
+                    </button>
+                    <button class="tenth-block-button">
+                        <p class="white-text">BRAZIL</p>
+                    </button>
+                </div>
+                <div class="tenth-block-pictures">
+                    <img src="./source/10block-first-img.png" width="306px" height="420px">
+                    <img src="./source/10block-second-img.png" width="306px" height="420px">
+                    <img src="./source/10block-third-img.png" width="306px" height="420px">
+                    <img src="./source/10block-fourth-img.png" width="306px" height="420px">
+                </div>
+            </div>
+
+            <div class="eleventh-block">
+                <div class="block-padding">
+                    <div class="text-holder">
+                        <p class="white-text">Let’s get started</p>
+                        <p class="gray-text"><br>Now that you know a lot about me, let me know if you are interested to work with me.</p>
+                    </div>
+                    <div class="content-holder">
+                        <div class="input-holder">
+                            <p class="gray-text white">Name</p>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="input-holder">
+                            <p class="gray-text white">Email</p>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="input-holder">
+                            <p class="gray-text white">Message</p>
+                            <textarea type="text" class="input big"></textarea>
+                        </div>
+                        <button class="eleventh-block-button">
+                            <p class="white-text">LET'S GET STARTED</p> 
+                        </button>
+                    </div>
+                </div>
+                    
+            </div>
+
+            <footer class="block-padding">
+                <div class="pictures-holder">
+                    <img src="./source/robin.svg" alt="" width="130px" height="40px">
+                    <div class="icons-holder">
+                        <img src="./source/footer-twitter-logo.svg" alt="" width="24px" height="24px">
+                        <img src="./source/footer-dribbble-logo.svg" alt="" width="24px" height="24px">
+                        <img src="./source/footer-linkedIn-logo.svg" alt="" width="24px" height="24px">
+                    </div>
+                </div>
+                <div class="contacts-holder">
+                    <a href="#" class="gray-text white first">Home</a>
+                    <a href="#" class="gray-text white second">About</a>
+                    <a href="#" class="gray-text white third">Work</a>
+                    <a href="#" class="gray-text white fourth">Process</a>
+                    <a href="#" class="gray-text white fifth">Store</a>
+                    <a href="#" class="gray-text white sixth">Blog</a>
+                    <a href="#" class="gray-text white seventh">Reading List</a>
+
+                </div>
+                <p class="gray-text">Not Copyright 2020 • Robin Williams. Webflow cloneable</p>
+            </footer>
         </div>
     </div>
 </body>
